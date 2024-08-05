@@ -1,0 +1,4 @@
+Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/cpp -- -j16 -l16
+Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/cpp -- -j16 -l16
+Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/cpp
+Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/cpp

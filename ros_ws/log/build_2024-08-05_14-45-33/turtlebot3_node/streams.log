@@ -1,0 +1,86 @@
+[0.009s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/cstar/Documents/brs_ws/ros_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node
+[0.192s] -- The C compiler identification is GNU 11.4.0
+[0.192s] -- The CXX compiler identification is GNU 11.4.0
+[0.192s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.193s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.193s] -- Detecting CXX compiler ABI info - done
+[0.193s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.193s] -- Detecting CXX compile features
+[0.193s] -- Detecting CXX compile features - done
+[0.193s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.288s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.346s] -- Found dynamixel_sdk: 3.7.60 (/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.347s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.373s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.376s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.382s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.538s] -- Found message_filters: 4.3.4 (/opt/ros/humble/share/message_filters/cmake)
+[0.589s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.590s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.653s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.672s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.706s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.712s] -- Looking for pthread.h
+[0.760s] -- Looking for pthread.h - found
+[0.760s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.817s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.818s] -- Found Threads: TRUE  
+[0.904s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.959s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.021s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.054s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[1.088s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.476s] -- Found turtlebot3_msgs: 2.2.3 (/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[1.580s] -- Configuring done
+[1.591s] -- Generating done
+[1.592s] -- Build files have been written to: /home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node
+[1.600s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/cstar/Documents/brs_ws/ros_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node
+[1.601s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node -- -j16 -l16
+[1.639s] [  7%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[1.640s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[1.640s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[1.640s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[1.640s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[1.640s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[1.640s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[1.640s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[1.640s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[1.641s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[1.641s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[17.924s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[20.244s] [ 85%] Built target turtlebot3_node_lib
+[20.352s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[22.587s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[24.145s] [100%] Built target turtlebot3_ros
+[24.152s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node -- -j16 -l16
+[24.184s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node
+[24.189s] -- Install configuration: ""
+[24.190s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/param
+[24.190s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[24.190s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[24.190s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[24.190s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[24.201s] -- Set runtime path of "/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros" to ""
+[24.201s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[24.207s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[24.207s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[24.207s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[24.228s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[24.228s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[24.242s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[24.252s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[24.252s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[24.260s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[24.260s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[24.261s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[24.262s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.262s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[24.262s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[24.262s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[24.267s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/lib:/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/turtlebot3_node

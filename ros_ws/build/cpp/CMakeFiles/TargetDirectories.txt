@@ -1,0 +1,10 @@
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/uninstall.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/cpp_uninstall.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/simple_node.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/test.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/edit_cache.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/rebuild_cache.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/list_install_components.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/install.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/install/local.dir
+/home/cstar/Documents/brs_ws/ros_ws/build/cpp/CMakeFiles/install/strip.dir

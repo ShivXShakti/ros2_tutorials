@@ -1,0 +1,70 @@
+[0.031s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cstar/Documents/brs_ws/ros_ws/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk
+[0.650s] -- The C compiler identification is GNU 11.4.0
+[1.131s] -- The CXX compiler identification is GNU 11.4.0
+[1.204s] -- Detecting C compiler ABI info
+[1.333s] -- Detecting C compiler ABI info - done
+[1.337s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.337s] -- Detecting C compile features
+[1.359s] -- Detecting C compile features - done
+[1.361s] -- Detecting CXX compiler ABI info
+[1.500s] -- Detecting CXX compiler ABI info - done
+[1.505s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.505s] -- Detecting CXX compile features
+[1.506s] -- Detecting CXX compile features - done
+[1.668s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.862s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.472s] -- Configuring done
+[2.506s] -- Generating done
+[2.507s] -- Build files have been written to: /home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk
+[2.511s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cstar/Documents/brs_ws/ros_ws/src/DynamixelSDK/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk
+[2.512s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk -- -j16 -l16
+[2.541s] [ 20%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o[0m
+[2.541s] [ 20%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o[0m
+[2.542s] [ 30%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o[0m
+[2.542s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o[0m
+[2.542s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o[0m
+[2.542s] [ 60%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o[0m
+[2.542s] [ 70%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o[0m
+[2.543s] [ 80%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o[0m
+[2.543s] [ 90%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o[0m
+[3.870s] [100%] [32m[1mLinking CXX shared library libdynamixel_sdk.so[0m
+[3.932s] [100%] Built target dynamixel_sdk
+[3.940s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk -- -j16 -l16
+[3.964s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk
+[3.968s] -- Install configuration: ""
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include/
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[3.968s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[3.969s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[3.970s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[3.971s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[3.972s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/dynamixel_sdk

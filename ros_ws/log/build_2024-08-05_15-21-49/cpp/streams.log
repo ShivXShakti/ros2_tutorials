@@ -1,0 +1,50 @@
+[0.006s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/cpp -- -j16 -l16
+[0.023s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.099s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.116s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.118s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.121s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.136s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.171s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.172s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.246s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.337s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.379s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.379s] -- Configured cppcheck include dirs: 
+[0.379s] -- Configured cppcheck exclude dirs and/or files: 
+[0.379s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.379s] -- Added test 'lint_cmake' to check CMake code style
+[0.379s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.380s] -- Added test 'uncrustify' to check C / C++ code style
+[0.380s] -- Configured uncrustify additional arguments: 
+[0.380s] -- Added test 'xmllint' to check XML markup files
+[0.381s] -- Configuring done
+[0.385s] -- Generating done
+[0.397s] -- Build files have been written to: /home/cstar/Documents/brs_ws/ros_ws/build/cpp
+[0.424s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_node.dir/src/simple.cpp.o[0m
+[4.118s] [100%] [32m[1mLinking CXX executable simple_node[0m
+[4.497s] [100%] Built target simple_node
+[4.505s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cstar/Documents/brs_ws/ros_ws/build/cpp -- -j16 -l16
+[4.562s] Invoking command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/cpp
+[4.566s] -- Install configuration: ""
+[4.566s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/lib/cpp/simple_node
+[4.566s] -- Set runtime path of "/home/cstar/Documents/brs_ws/ros_ws/install/cpp/lib/cpp/simple_node" to ""
+[4.566s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp//launch
+[4.566s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp//launch/simple.launch.py
+[4.566s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/package_run_dependencies/cpp
+[4.567s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/parent_prefix_path/cpp
+[4.575s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/ament_prefix_path.sh
+[4.575s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/ament_prefix_path.dsv
+[4.584s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/path.sh
+[4.584s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/path.dsv
+[4.593s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.bash
+[4.593s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.sh
+[4.594s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.zsh
+[4.594s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.dsv
+[4.611s] -- Installing: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/package.dsv
+[4.611s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/packages/cpp
+[4.611s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/cmake/cppConfig.cmake
+[4.611s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/cmake/cppConfig-version.cmake
+[4.612s] -- Up-to-date: /home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/package.xml
+[4.615s] Invoked command in '/home/cstar/Documents/brs_ws/ros_ws/build/cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/cstar/Documents/brs_ws/ros_ws/build/cpp

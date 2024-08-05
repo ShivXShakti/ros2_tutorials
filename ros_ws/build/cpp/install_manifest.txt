@@ -1,0 +1,17 @@
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/lib/cpp/simple_node
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp//launch/simple.launch.py
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/package_run_dependencies/cpp
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/parent_prefix_path/cpp
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/ament_prefix_path.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/ament_prefix_path.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/path.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/environment/path.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.bash
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.zsh
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/local_setup.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/package.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/ament_index/resource_index/packages/cpp
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/cmake/cppConfig.cmake
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/cmake/cppConfig-version.cmake
+/home/cstar/Documents/brs_ws/ros_ws/install/cpp/share/cpp/package.xml

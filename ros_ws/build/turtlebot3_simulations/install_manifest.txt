@@ -1,0 +1,15 @@
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/ament_index/resource_index/package_run_dependencies/turtlebot3_simulations
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/ament_index/resource_index/parent_prefix_path/turtlebot3_simulations
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/ament_prefix_path.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/ament_prefix_path.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/path.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/environment/path.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.bash
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.sh
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.zsh
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/local_setup.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/ament_index/resource_index/packages/turtlebot3_simulations
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig.cmake
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/cmake/turtlebot3_simulationsConfig-version.cmake
+/home/cstar/Documents/brs_ws/ros_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.xml
