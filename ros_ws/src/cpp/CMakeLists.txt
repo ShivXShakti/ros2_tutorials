@@ -8,6 +8,8 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -21,9 +23,21 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 add_executable(simple_node src/simple.cpp)
+add_executable(publisher_node src/publisher.cpp)
+add_executable(publisher_composition_node src/publisher_composition.cpp)
+add_executable(move_robot_node src/move_robot.cpp)
+add_executable(subscriber_node src/subscriber.cpp)
 ament_target_dependencies(simple_node rclcpp)
+ament_target_dependencies(publisher_node rclcpp std_msgs)
+ament_target_dependencies(publisher_composition_node rclcpp std_msgs)
+ament_target_dependencies(move_robot_node rclcpp std_msgs geometry_msgs)
+ament_target_dependencies(subscriber_node rclcpp std_msgs)
 install(TARGETS
 simple_node
+publisher_node
+publisher_composition_node
+move_robot_node
+subscriber_node
 DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
