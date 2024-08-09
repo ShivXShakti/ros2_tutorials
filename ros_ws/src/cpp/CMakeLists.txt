@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(custom_interface REQUIRED)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -32,6 +33,10 @@ add_executable(move_robot_node src/move_robot.cpp)
 add_executable(subscriber_node src/subscriber.cpp)
 add_executable(read_odom src/read_odom.cpp)
 add_executable(robot_age_node src/publish_robot_age.cpp)
+add_executable(avoid_obstacle_node src/avoid_obstacles_with_laser.cpp)
+add_executable(executor_minimal_node src/executor_minimal.cpp)
+add_executable(executor_with_callback_node src/executor_with_callback.cpp)
+add_executable(executor_with_2callback_node src/executor_with_2callbacks.cpp)
 ament_target_dependencies(simple_node rclcpp)
 ament_target_dependencies(publisher_node rclcpp std_msgs)
 ament_target_dependencies(publisher_composition_node rclcpp std_msgs)
@@ -39,6 +44,11 @@ ament_target_dependencies(move_robot_node rclcpp std_msgs geometry_msgs)
 ament_target_dependencies(subscriber_node rclcpp std_msgs)
 ament_target_dependencies(read_odom rclcpp nav_msgs)
 ament_target_dependencies(robot_age_node rclcpp std_msgs custom_interface)
+ament_target_dependencies(avoid_obstacle_node rclcpp std_msgs sensor_msgs geometry_msgs)
+ament_target_dependencies(executor_minimal_node rclcpp)
+ament_target_dependencies(executor_with_callback_node rclcpp nav_msgs)
+ament_target_dependencies(executor_with_2callback_node rclcpp nav_msgs)
+
 
 install(TARGETS
 simple_node
@@ -48,6 +58,10 @@ move_robot_node
 subscriber_node
 read_odom
 robot_age_node
+avoid_obstacle_node
+executor_minimal_node
+executor_with_callback_node
+executor_with_2callback_node
 DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
