@@ -13,6 +13,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(custom_interface REQUIRED)
+find_package(std_srvs REQUIRED)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -22,7 +24,7 @@ if(BUILD_TESTING)
   # comment the line when this package is in a git repo and when
   # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
+  ament_lint_auto_find_test_dependencies() 
 endif()
 
 
@@ -37,6 +39,13 @@ add_executable(avoid_obstacle_node src/avoid_obstacles_with_laser.cpp)
 add_executable(executor_minimal_node src/executor_minimal.cpp)
 add_executable(executor_with_callback_node src/executor_with_callback.cpp)
 add_executable(executor_with_2callback_node src/executor_with_2callbacks.cpp)
+add_executable(multi_thread_executor_node src/multi_thread_executor.cpp)
+add_executable(seperate_executors_node src/seperate_executors.cpp)
+add_executable(callback_group_2timer_node src/callback_group_2timer.cpp)
+add_executable(callback_group_reentrant_node src/callback_group_reentrants.cpp)
+add_executable(callback_group_MutuallyExclusive_node src/callback_group_MutuallyExclusive.cpp)
+add_executable(callback_group_MutuallyExclusiveMultiple_node src/callback_group_MutuallyExclusive_multiple.cpp)
+
 ament_target_dependencies(simple_node rclcpp)
 ament_target_dependencies(publisher_node rclcpp std_msgs)
 ament_target_dependencies(publisher_composition_node rclcpp std_msgs)
@@ -48,7 +57,12 @@ ament_target_dependencies(avoid_obstacle_node rclcpp std_msgs sensor_msgs geomet
 ament_target_dependencies(executor_minimal_node rclcpp)
 ament_target_dependencies(executor_with_callback_node rclcpp nav_msgs)
 ament_target_dependencies(executor_with_2callback_node rclcpp nav_msgs)
-
+ament_target_dependencies(multi_thread_executor_node rclcpp nav_msgs) 
+ament_target_dependencies(seperate_executors_node rclcpp nav_msgs) 
+ament_target_dependencies(callback_group_2timer_node rclcpp) 
+ament_target_dependencies(callback_group_reentrant_node rclcpp) 
+ament_target_dependencies(callback_group_MutuallyExclusive_node rclcpp) 
+ament_target_dependencies(callback_group_MutuallyExclusiveMultiple_node rclcpp) 
 
 install(TARGETS
 simple_node
@@ -62,6 +76,12 @@ avoid_obstacle_node
 executor_minimal_node
 executor_with_callback_node
 executor_with_2callback_node
+multi_thread_executor_node
+seperate_executors_node
+callback_group_2timer_node
+callback_group_reentrant_node
+callback_group_MutuallyExclusive_node
+callback_group_MutuallyExclusiveMultiple_node
 DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY
