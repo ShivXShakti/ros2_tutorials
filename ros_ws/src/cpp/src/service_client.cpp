@@ -9,7 +9,7 @@ using namespace std::chrono_literals;
 int main(int argc, char* argv[]){
     rclcpp::init(argc, argv);
     std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("service_client");
-    rclcpp::Client<std_srvs::srv::Empty>::SharedPtr client = node->create_client<std_srvs::srv::Empty>("moving");
+    rclcpp::Client<std_srvs::srv::Empty>::SharedPtr client = node->create_client<std_srvs::srv::Empty>("moving_right");
  
     auto request = std::make_shared<std_srvs::srv::Empty::Request>();
 

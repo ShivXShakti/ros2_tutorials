@@ -1,15 +1,14 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_srvs/srv/set_bool.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "custom_interface/srv/move_message.hpp"
 #include <memory>
 using std::placeholders::_1;
-using std::placeholders::_2;
+using std::placeholders::_2; 
 
 class ServerNode : public rclcpp::Node{
     public:
-        ServerNode(): Node("movement_server"){
-            srv_ = create_service<custom_interface::srv::MoveMessage>("movement", std::bind(&ServerNode::moving_callback, this, _1, _2));
+        ServerNode(): Node("move_server"){
+            srv_ = create_service<custom_interface::srv::MoveMessage>("move", std::bind(&ServerNode::moving_callback, this, _1, _2));
             publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
         }
     private:

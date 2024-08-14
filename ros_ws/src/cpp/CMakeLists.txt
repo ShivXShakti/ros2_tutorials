@@ -48,7 +48,7 @@ add_executable(callback_group_MutuallyExclusiveMultiple_node src/callback_group_
 add_executable(service_server_node src/service_server.cpp)
 add_executable(move_server_node src/move_server.cpp)
 add_executable(service_client_node src/service_client.cpp)
-add_executable(movement_client_node src/movement_client.cpp)
+add_executable(move_client_node src/move_client.cpp)
 
 
 ament_target_dependencies(simple_node rclcpp)
@@ -71,7 +71,7 @@ ament_target_dependencies(callback_group_MutuallyExclusiveMultiple_node rclcpp)
 ament_target_dependencies(service_server_node rclcpp std_srvs geometry_msgs) 
 ament_target_dependencies(move_server_node rclcpp std_srvs geometry_msgs custom_interface) 
 ament_target_dependencies(service_client_node rclcpp std_srvs) 
-ament_target_dependencies(movement_client_node rclcpp std_srvs custom_interface) 
+ament_target_dependencies(move_client_node rclcpp std_srvs custom_interface) 
 
 
 install(TARGETS
@@ -95,7 +95,7 @@ callback_group_MutuallyExclusiveMultiple_node
 service_server_node
 move_server_node
 service_client_node
-movement_client_node
+move_client_node
 DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY

@@ -7,7 +7,7 @@ using std::placeholders::_2;
 
 class ServerNode : public rclcpp::Node{
     public:
-        ServerNode(): Node("service_moving"){
+        ServerNode(): Node("service_server"){
             srv_ = create_service<std_srvs::srv::SetBool>("moving_right", std::bind(&ServerNode::moving_callback, this, _1, _2));
             publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
         }
