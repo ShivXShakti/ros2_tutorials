@@ -24,7 +24,10 @@ setup(
     entry_points={ 
         'console_scripts': [
             'simple_node = ros_python.simple:main',
-            'simple_publisher = ros_python.simple_publisher:main'
+            'simple_publisher = ros_python.simple_publisher:main',
+            'simple_subscriber = ros_python.simple_subscriber:main',
+            'service_server = ros_python.service_server:main',
+            'service_client = ros_python.service_client:main'
         ],
     },
 )

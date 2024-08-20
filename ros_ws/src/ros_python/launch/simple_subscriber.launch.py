@@ -4,6 +4,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='ros_python',
-            executable='simple_publisher',
+            executable='simple_subscriber',
             output='screen'),
     ]) 
