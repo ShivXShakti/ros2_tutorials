@@ -1,0 +1,921 @@
+<?xml version="1.0"?>
+<robot name="biped">
+
+<link name="base_link"></link>
+<link name="Torso_Pelvis_Block_Part">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0" />
+        <geometry>
+            <mesh filename="package://robot_description/meshes/robot/Torso_Pelvis_Block_Part.STL"/>
+        </geometry>
+        <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.0041 -1E-05 0.02016"
+        rpy="0 0 0" />
+      <mass
+        value="7.20094" />
+      <inertia
+        ixx="0.110444382"
+        ixy="1.41826E-06"
+        ixz="-0.000301506"
+        iyy="0.024224628"
+        iyz="-3.1726E-06"
+        izz="0.108900947" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/Torso_Pelvis_Block_Part.STL" />
+      </geometry>
+    </collision>
+</link>
+
+<joint name="base_joint" type="fixed">
+    <origin xyz="0 0 1.1" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="Torso_Pelvis_Block_Part"/>
+</joint>
+
+
+<link name="HipRollR_Part">
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <geometry>
+        <mesh filename="package://robot_description/meshes/robot/HipRollR_Part.STL"/>
+    </geometry>
+    <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.09306 -0.00015 -0.07231"
+        rpy="0 0 0" />
+      <mass
+        value="1.4819" />
+      <inertia
+        ixx="0.0023635"
+        ixy="2.0703E-05"
+        ixz="0.0017759"
+        iyy="0.0072612"
+        iyz="2.7025E-06"
+        izz="0.0061088" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipRollR_Part.STL" />
+      </geometry>
+    </collision>
+</link>
+<joint name="HipYaw_R" type="revolute">
+    <origin xyz="0 -0.13 -0.046446" rpy="0 0 0"/>
+    <parent link="Torso_Pelvis_Block_Part"/>
+    <child link="HipRollR_Part"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="351" velocity="8.3775" lower="-0.4363" upper="0.4363"/>
+</joint>
+
+<link
+    name="HipPitchR_Part">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipPitchR_Part.STL" />
+      </geometry>
+       <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.00073 0.00053 4E-05"
+        rpy="0 0 0" />
+      <mass
+        value="2.7882" />
+      <inertia
+        ixx="0.005056"
+        ixy="1.0501E-05"
+        ixz="6.7144E-07"
+        iyy="0.0046345"
+        iyz="6.5768E-06"
+        izz="0.0059071" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipPitchR_Part.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="HipRoll_R" type="revolute">
+    <origin xyz="0 0.00065 -0.086"
+            rpy="0 0 0" />
+    <parent link="HipRollR_Part" />
+    <child link="HipPitchR_Part" />
+    <axis xyz="1 0 0" />
+    <limit
+      lower="-0.8727"
+      upper="0.3927"
+      effort="351"
+      velocity="8.3775" />
+  </joint>
+
+<link
+    name="ThighR_Part">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ThighR_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.01871 0.00015 -0.19541"
+        rpy="0 0 0" />
+      <mass
+        value="6.0259" />
+      <inertia
+        ixx="0.089063"
+        ixy="3.3176E-05"
+        ixz="0.0055581"
+        iyy="0.088746"
+        iyz="-0.00067823"
+        izz="0.028906" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ThighR_Part.STL" />
+      </geometry>
+    </collision>
+    
+  </link>
+  <joint
+    name="HipPitch_R"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="HipPitchR_Part" />
+    <child
+      link="ThighR_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.92"
+      upper="0.7854"
+      effort="298"
+      velocity="16.775" />
+  </joint>
+
+  <link
+    name="ShankR_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ShankR_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.00446 2E-05 -0.15133"
+        rpy="0 0 0" />
+      <mass
+        value="4.1262" />
+      <inertia
+        ixx="0.065115"
+        ixy="2.4523E-06"
+        ixz="0.0026486"
+        iyy="0.067847"
+        iyz="1.6598E-05"
+        izz="0.012455" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ShankR_Part.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="KneePitch_R"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.44"
+      rpy="0 0 0" />
+    <parent
+      link="ThighR_Part" />
+    <child
+      link="ShankR_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.087"
+      upper="2.1817"
+      effort="420.6"
+      velocity="6.9813" />
+  
+  </joint>
+  <link
+    name="AnkleRollR_Part">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnkleRollR_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+     <inertial>
+      <origin
+        xyz="0.00188 -4E-05 -0.00011"
+        rpy="0 0 0" />
+      <mass
+        value="0.37504" />
+      <inertia
+        ixx="4.9424E-05"
+        ixy="1.017E-06"
+        ixz="2.2923E-06"
+        iyy="0.00060625"
+        iyz="1.7755E-07"
+        izz="0.00060596" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnkleRollR_Part.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="AnkleRoll_R"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.43"
+      rpy="0 0 0" />
+    <parent
+      link="ShankR_Part" />
+    <child
+      link="AnkleRollR_Part" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.6109"
+      upper="0.6109"
+      effort="131.4"
+      velocity="3.4906" />
+  </joint>
+
+  <link
+    name="AnklePitch_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnklePitch_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="0.02423 -0.00211 -0.06644"
+        rpy="0 0 0" />
+      <mass
+        value="3.0811" />
+      <inertia
+        ixx="0.011207"
+        ixy="0.0001562"
+        ixz="-0.0027704"
+        iyy="0.019179"
+        iyz="-0.0004302"
+        izz="0.0208" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnklePitch_Part.STL" />
+      </geometry>
+    </collision>
+   
+  </link>
+  <joint
+    name="AnklePitch_R"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="AnkleRollR_Part" />
+    <child
+      link="AnklePitch_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.0821"
+      upper="0.7854"
+      effort="262.8"
+      velocity="6.9813" />
+   
+  </joint>
+  <link
+    name="HipRollL_Part">
+    
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipRollL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.09306 -0.00015 -0.07231"
+        rpy="0 0 0" />
+      <mass
+        value="1.4819" />
+      <inertia
+        ixx="0.0023635"
+        ixy="2.0703E-05"
+        ixz="0.0017759"
+        iyy="0.0072612"
+        iyz="2.7025E-06"
+        izz="0.0061088" />
+    </inertial>
+     <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipRollL_Part.STL" />
+      </geometry>
+    </collision>
+   
+  </link>
+  <joint
+    name="HipYaw_L"
+    type="revolute">
+    <origin
+      xyz="0 0.078 -0.046446"
+      rpy="0 0 0" />
+    <parent
+      link="Torso_Pelvis_Block_Part" />
+    <child
+      link="HipRollL_Part" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.4363"
+      upper="0.4363"
+      effort="351"
+      velocity="8.3775" />
+   
+  </joint>
+  <link
+    name="HipPitchL_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipPitchL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.00073 -0.00053 -4E-05"
+        rpy="0 0 0" />
+      <mass
+        value="2.7882" />
+      <inertia
+        ixx="0.005056"
+        ixy="-1.0501E-05"
+        ixz="-6.7144E-07"
+        iyy="0.0046345"
+        iyz="6.5768E-06"
+        izz="0.0059071" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/HipPitchL_Part.STL" />
+      </geometry>
+    </collision>
+    
+  </link>
+  <joint
+    name="HipRoll_L"
+    type="revolute">
+    <origin
+      xyz="0 0.05135 -0.086"
+      rpy="0 0 0" />
+    <parent
+      link="HipRollL_Part" />
+    <child
+      link="HipPitchL_Part" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.3927"
+      upper="0.8727"
+      effort="351"
+      velocity="8.3775" />
+  </joint>
+  <link
+    name="ThighPartL_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ThighPartL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.01871 -0.00011 -0.19549"
+        rpy="0 0 0" />
+      <mass
+        value="6.0259" />
+      <inertia
+        ixx="0.089132"
+        ixy="-2.4671E-05"
+        ixz="0.0055745"
+        iyy="0.088797"
+        iyz="0.0007083"
+        izz="0.02892" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ThighPartL_Part.STL" />
+      </geometry>
+    </collision>
+    
+  </link>
+  <joint
+    name="HipPitch_L"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="HipPitchL_Part" />
+    <child
+      link="ThighPartL_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.7854"
+      upper="1.92"
+      effort="298"
+      velocity="16.775" />
+   
+  </joint>
+  <link
+    name="ShankL_Part">
+    
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ShankL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.00446 2E-05 -0.15133"
+        rpy="0 0 0" />
+      <mass
+        value="4.1262" />
+      <inertia
+        ixx="0.065115"
+        ixy="2.4523E-06"
+        ixz="0.0026486"
+        iyy="0.067847"
+        iyz="1.6598E-05"
+        izz="0.012455" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/ShankL_Part.STL" />
+      </geometry>
+    </collision>
+   
+  </link>
+  <joint
+    name="KneePitch_L"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.44"
+      rpy="0 0 0" />
+    <parent
+      link="ThighPartL_Part" />
+    <child
+      link="ShankL_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.087"
+      upper="2.1817"
+      effort="420.6"
+      velocity="6.9813" />
+   
+  </joint>
+  <link
+    name="AnkleRollL_Part">
+    
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnkleRollL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="0.00188 -4E-05 -0.00011"
+        rpy="0 0 0" />
+      <mass
+        value="0.37504" />
+      <inertia
+        ixx="4.9424E-05"
+        ixy="1.017E-06"
+        ixz="2.2923E-06"
+        iyy="0.00060625"
+        iyz="1.7755E-07"
+        izz="0.00060596" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnkleRollL_Part.STL" />
+      </geometry>
+    </collision>
+   
+  </link>
+  <joint
+    name="AnkleRoll_L"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.43"
+      rpy="0 0 0" />
+    <parent
+      link="ShankL_Part" />
+    <child
+      link="AnkleRollL_Part" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.6109"
+      upper="0.6109"
+      effort="131.4"
+      velocity="3.4906" />
+   
+  </joint>
+  <link
+    name="AnklePitchL_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnklePitchL_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="0.02423 -0.00211 -0.06644"
+        rpy="0 0 0" />
+      <mass
+        value="3.0811" />
+      <inertia
+        ixx="0.011207"
+        ixy="0.0001562"
+        ixz="-0.0027704"
+        iyy="0.019179"
+        iyz="-0.0004302"
+        izz="0.0208" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/AnklePitchL_Part.STL" />
+      </geometry>
+    </collision>
+    
+  </link>
+  <joint
+    name="AnklePitch_L"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="AnkleRollL_Part" />
+    <child
+      link="AnklePitchL_Part" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.7854"
+      upper="1.0821"
+      effort="262.8"
+      velocity="6.9813" />
+   
+  </joint>
+
+
+  <link
+    name="Pelvis_Roll_Part">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/Pelvis_Roll_Part.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="-0.12921 0.00016 0.01628"
+        rpy="0 0 0" />
+      <mass
+        value="1.34791" />
+      <inertia
+        ixx="0.002226474"
+        ixy="-6.4528E-07"
+        ixz="-0.000134079"
+        iyy="0.002468915"
+        iyz="-1.64305E-05"
+        izz="0.001504535" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/Pelvis_Roll_Part.STL" />
+      </geometry>
+    </collision>
+    
+  </link>
+  <joint
+    name="Pelvis_Roll"
+    type="revolute">
+    <origin
+      xyz="0 0 0.030054"
+      rpy="0 0 0" />
+    <parent
+      link="Torso_Pelvis_Block_Part" />
+    <child
+      link="Pelvis_Roll_Part" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.3491"
+      upper="0.3491"
+      effort="130"
+      velocity="8.3775" />
+   
+  </joint>
+  <link
+    name="Torso">
+   
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/Torso.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <inertial>
+      <origin
+        xyz="0.09211 0 0.30602"
+        rpy="0 0 0" />
+      <mass
+        value="15.678" />
+      <inertia
+        ixx="0.332886116"
+        ixy="2.31E-08"
+        ixz="0.013064495"
+        iyy="0.233598713"
+        iyz="-1.9411E-07"
+        izz="0.234014226" />
+    </inertial>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/robot/Torso.STL" />
+      </geometry>
+    </collision>
+   
+  </link>
+  <joint
+    name="Pelvis_Yaw"
+    type="revolute">
+    <origin
+      xyz="-0.1335 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Pelvis_Roll_Part" />
+    <child
+      link="Torso" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3491"
+      upper="0.3491"
+      effort="130"
+      velocity="8.3775" />
+  </joint>
+
+<gazebo>
+  <plugin name="robot_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+  <ros>
+    <remapping>~/out:=joint_states</remapping>
+  </ros>
+  <update_rate>30</update_rate>
+  <joint_name>HipYaw_R</joint_name>
+  <joint_name>HipRoll_R</joint_name>
+  <joint_name>HipPitch_R</joint_name>
+  <joint_name>KneePitch_R</joint_name>
+  <joint_name>AnkleRoll_R</joint_name>
+  <joint_name>AnklePitch_R</joint_name>
+  <joint_name>HipYaw_L</joint_name>
+  <joint_name>HipRoll_L</joint_name>
+   <joint_name>HipPitch_L</joint_name>
+  <joint_name>KneePitch_L</joint_name>
+  <joint_name>AnkleRoll_L</joint_name>
+  <joint_name>AnklePitch_L</joint_name>
+  <joint_name>Pelvis_Roll</joint_name>
+  <joint_name>Pelvis_Yaw</joint_name>
+  </plugin>
+</gazebo>
+
+<!-- Position Config -->
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+</hardware>
+<joint name="Pelvis_Yaw">
+<command_interface name="position">
+<param name="min">-0.05</param>
+<param name="max">0.0</param>
+</command_interface>
+<state_interface name="position"/>
+<state_interface name="velocity"/>
+<state_interface name="effort"/>
+</joint>
+</ros2_control>
+<gazebo>
+<plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+<parameters>$(find robot_description)/config/controller_position.yaml</parameters>
+<robot_param_node>/robot_state_publisher_node</robot_param_node>
+</plugin>
+</gazebo>
+
+</robot>

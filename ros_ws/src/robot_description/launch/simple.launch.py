@@ -4,7 +4,7 @@ from launch import LaunchDescription
 from launch.substitutions import Command
 from launch_ros.actions import Node
 def generate_launch_description():
-    urdf_file = 'simple_meshes.urdf'
+    urdf_file = 'robot.urdf'
     package_description = "robot_description"
     print("Fetching URDF ==>")
     robot_desc_path = os.path.join(get_package_share_directory(package_description), "urdf", urdf_file)
